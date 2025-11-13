@@ -45,6 +45,12 @@ const CollegeForm = ({ fetchColleges, editingCollege, setEditingCollege }) => {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(college),
         });
+        setCollegeName('');
+      setLocation('');
+      setDean('');
+      setContactNumber('');
+      setEmail('');
+      setAccreditation('');
       }
       fetchColleges();
       setEditingCollege(null);
